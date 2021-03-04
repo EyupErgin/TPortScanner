@@ -18,10 +18,10 @@ print q{
 };
 print "[TurkOsint] IP Adresi Giriniz : ";
 chop ($target = <stdin>);
-print "[TurkOsint] Başlangıç Portu Giriniz: ";
+print "[TurkOsint] Başlangıç Portu Giriniz(Min: 0): ";
 chop ($start_port = <stdin>);
 &check_port($start_port);
-print "[TurkOsint] Sonlanış Portu Giriniz: ";
+print "[TurkOsint] Sonlanış Portu Giriniz(Max: 65535): ";
 chop ($end_port = <stdin>);
 &check_port($end_port);
 
